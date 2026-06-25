@@ -1,17 +1,59 @@
+/* HTML Inline Styles */
+body {
+  background-color: #0a0a0a;
+  color: #e5e2e1;
+  font-family: "Hanken Grotesk", sans-serif;
+  overflow-x: hidden;
+}
+
+.kinetic-gradient {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(195, 244, 0, 0.08),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(0, 227, 253, 0.05),
+      transparent 40%
+    );
+}
+
+.form-glow {
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.5);
+}
+
+.input-focus-effect:focus {
+  box-shadow: 0 0 0 1px #c3f400;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+/* Original Styles */
 body {
   font-family: "Arial", sans-serif;
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
+
 h1 {
   color: #333;
 }
+
 .card {
   background-color: #fff;
   border-radius: 8px;
@@ -19,6 +61,7 @@ h1 {
   padding: 20px;
   margin-bottom: 20px;
 }
+
 .card h2 {
   margin-top: 0;
 }
