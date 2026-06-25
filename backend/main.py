@@ -1,6 +1,10 @@
 from fastapi import FastAPI
 
+from .Controllers.ActivityTrackerController import router as activity_router
+
 app = FastAPI()
+
+app.include_router(activity_router, prefix="/api")
 
 
 @app.get("/")
